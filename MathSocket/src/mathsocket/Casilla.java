@@ -4,15 +4,9 @@ import java.io.Serializable;
 
 public class Casilla implements Serializable {
 
-    /**
-     * Variables that are going to be saved
-     */
     private String tipo;
     private int pos;
 
-    /**
-     * Set y get al tipo
-     */
     public void setTipo(String type) {
         this.tipo = type;
     }
