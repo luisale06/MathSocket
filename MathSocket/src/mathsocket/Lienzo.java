@@ -1,10 +1,3 @@
-/*ITCR
-Área Académica Ingeniería en Computadores
-II Semestre 2021/Algoritmos y Estructura de Datos I
-Tarea Extraclase 1
-Estudiante: Luis Pablo Céspedes Sequeira.
-Carné: 201156162
-IDE: NetBeans 12.2*/
 package mathsocket;
 
 import java.awt.Canvas;
@@ -13,13 +6,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
-/**
- * Esta clase contiene las partes de la interfaz que no intervienen en la lógica
- * del programa, que por esto se puede usar en ambos usuarios.
- *
- * @author Luis Pablo Céspedes Sequeira.
- * @see Lienzo
- */
 @SuppressWarnings("serial")
 public class Lienzo extends Canvas {
     public int e = 1;
@@ -33,13 +19,6 @@ public class Lienzo extends Canvas {
     DoublyLinkedListObj list = new DoublyLinkedListObj();
     DoublyLinkedListObj refresh = new DoublyLinkedListObj();
 
-    /**
-     * Metodo parametrizado, constructor por defecto del otro usuario, y hacerle
-     * los cambios necesarios para asignarlos a las etiquetas que los desplegan
-     *
-     * @param nombre Nombre del otro ususario para identificar que los datos que
-     * se desplegan son del otro usuario
-     */
     public Lienzo(DoublyLinkedListObj l,DoublyLinkedListObj l2) {
 
         list = l;
@@ -60,10 +39,6 @@ public class Lienzo extends Canvas {
         av2.move();
     }
     @Override
-    /**
-     * Metodo que se encarga de dibujar y escribir objetos de cierta parte de la
-     * interfaz
-     */
     public void paint(Graphics p) {
         super.paint(p);
         final String color = "Reto";
