@@ -143,7 +143,7 @@ public class DoublyLinkedListObj {
 
     public void setPosition() {
         DoubleNodeObj cn = head;
-        int count = 1;
+        int count = 0;
         while (cn != null) {
             cn.getObj().setPos(count);
             cn = cn.getNext();
