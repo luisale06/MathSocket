@@ -5,30 +5,17 @@ public class DoublyLinkedListObj {
     private DoubleNodeObj head;
     private DoubleNodeObj tail;
     private String jugador;
-    /**
-     * Constructs a new DoublyLinkedList object with head and tail as null.
-     */
+    
     public DoublyLinkedListObj() {
         head = null;
         tail = null;
 
     }
 
-    /**
-     * Returns true if the list is empty false otherwise
-     *
-     * @return true if the list empty false otherwise
-     */
     public boolean isEmpty() {
         return head == null;
     }
 
-    /**
-     * Add a character BNode containing the character c to the end of the linked
-     * list. This routine does not require a search.
-     *
-     * @param det a single character
-     */
     public void addObjAtEnd(Casilla det) {
         DoubleNodeObj n = new DoubleNodeObj(tail, det, null);
         if (isEmpty()) {
@@ -39,12 +26,6 @@ public class DoublyLinkedListObj {
         }
     }
 
-    /**
-     * Add a character BNode containing the character c to the front of the
-     * linked list. No search is required.
-     *
-     * @param det a single character
-     */
     public void addObjAtFront(Casilla det) {
         DoubleNodeObj n = new DoubleNodeObj(null, det, head);
         if (isEmpty()) {
@@ -55,11 +36,6 @@ public class DoublyLinkedListObj {
         }
     }
 
-    /**
-     * Remove and return the character at the front of the doubly linked list.
-     *
-     * @return the character at the front precondition: the list is not empty
-     */
     public Casilla removeObjFromFront() {
         Casilla deta = head.getObj();
         if (!isEmpty()) {
@@ -73,12 +49,6 @@ public class DoublyLinkedListObj {
         return deta;
     }
 
-    /**
-     * Remove and return the character at the end of the doubly linked list. No
-     * searching is required.
-     *
-     * @return the character at the end precondition: the list is not empty
-     */
     public Casilla removeObjAtEnd() {
         Casilla deta = tail.getObj();
 
@@ -94,13 +64,6 @@ public class DoublyLinkedListObj {
         return deta;
     }
 
-    /**
-     * Counts the number of BNodes in the list. We are not maintaining a counter
-     * so a search is required.
-     *
-     * @return the number of BNodes in the doubly linked list between head and
-     * tail inclusive
-     */
     public int countBNodesObj() {
         DoubleNodeObj cn = head;
         int count = 0;
@@ -111,9 +74,6 @@ public class DoublyLinkedListObj {
         return count;
     }
 
-    /**
-     * Reverse the list. a -> b -> c becomes c -> b -> a
-     */
     public void reverse() {
         DoubleNodeObj cn = head;
         DoubleNodeObj tmp;
