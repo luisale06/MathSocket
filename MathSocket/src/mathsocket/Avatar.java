@@ -1,13 +1,6 @@
 package mathsocket;
 
-/**
- * @author Pablo
- * @author Alejandro
- */
-
 import java.awt.Graphics2D;
-
-
 
 public class Avatar {
 
